@@ -11,7 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class TestWhileService {
 
     boolean breakLoop = false;
-    Map<String, Integer> map = new ConcurrentHashMap();
+    Map<String, Integer> map = new ConcurrentHashMap<>();
     /**
      *
      * @param threadName 指定线程名
