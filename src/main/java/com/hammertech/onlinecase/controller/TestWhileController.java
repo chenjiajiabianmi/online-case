@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Slf4j
 @RequestMapping
 @Controller
-public class testWhileController {
+public class TestWhileController {
 
     @Autowired
     private TestWhileService testWhileService;
