@@ -1,10 +1,15 @@
 # 使用 Ubuntu 作为基础镜像
 FROM ubuntu:latest
 
-# 更新系统并安装top命令和Java 17
+# 更新系统并安装 top 命令、telnet 和 Java 17
 RUN apt-get update && \
-    apt-get install -y procps && \
-    apt-get install -y openjdk-17-jdk
+    apt-get install -y procps telnet openjdk-17-jdk
+
+# 安装 curl
+RUN apt-get install -y curl
+
+# 安装 unzip
+RUN apt-get install -y unzip
 
 # 设置工作目录
 WORKDIR /app
